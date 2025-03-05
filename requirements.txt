@@ -1,0 +1,5 @@
+Flask~=3.1.0
+python-dotenv~=0.21.0
+openai~=1.60.1
+gunicorn
+pydantic~=2.9.2
