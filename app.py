@@ -22,7 +22,7 @@ def generate():
     try:
         quiz_question = generate_quiz_question(learning_objective)
         # Convert the Pydantic model to a dict before serializing to JSON
-        return jsonify({'question': quiz_question.dict()})
+        return jsonify({'question': quiz_question.model_dump()})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
